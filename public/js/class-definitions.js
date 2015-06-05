@@ -502,6 +502,13 @@ Person.prototype.earnMoney = function(money){
  *
  */
 
+var purchaseLaptop = function(laptop){
+  if((laptopCosts.hasOwnProperty(laptop)) && (typeof laptop === 'string') ){
+    var costOfLaptop = laptopCosts[laptop];
+    return costOfLaptop.toString();
+  }
+  return -1;
+}
 
 /* Step 29
  *
@@ -515,6 +522,12 @@ Person.prototype.earnMoney = function(money){
  *
  */
 
+var canTalkAbout = function(club){
+  if(club === club_name){
+    return false;
+  }
+  return true;
+}
 
 /* Step 30
  *
