@@ -485,10 +485,10 @@ function Person(name, money, age, gender){
 }
 Person.prototype.spendMoney = function(money){
     this.money -= money;
-  }
+  };
 Person.prototype.earnMoney = function(money){
     this.money += money;
-  }
+  };
 
 /* Step 28
  *
@@ -508,7 +508,7 @@ var purchaseLaptop = function(laptop){
     return costOfLaptop.toString();
   }
   return -1;
-}
+};
 
 /* Step 29
  *
@@ -661,6 +661,35 @@ SolarSystem.prototype.removePlanet = function() {
  *
  */
 
+function PrincessLeia(name, money, age, gender, isInTrouble){
+  Person.call(this, name, money, age, gender)
+  this.isInTrouble = null;
+}
+
+PrincessLeia.prototype = Object.create(Person.prototype,{
+  constructor :{
+    value : Person
+  }
+})
+
+PrincessLeia.prototype.shootsGun = function(){
+  return "Leia shoots her gun wildly";
+}
+
+PrincessLeia.prototype.getsInTrouble = function() {
+  return "Help me Obi-wan Kenobi, you're my only hope";
+};
+
+PrincessLeia.prototype.marries = function(spouse) {
+  if(spouse === "Han Solo"){
+    return true;
+  }
+  else if(spouse === 'Luke Skywalker'){
+    return 'Gross!';
+  }else{
+  return false;
+}
+};
 
 /* Step 34
  *
