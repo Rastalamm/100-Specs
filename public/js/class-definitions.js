@@ -618,14 +618,14 @@ Garden.prototype.grow = function() {
  *
  */
 
-function SolarSystem(planets){
+function SolarSystem(){
   this.planets = [];
 }
-SolarSystem.prototype.addPlanet = function() {
+SolarSystem.prototype.addPlanet = function(planets) {
   this.planets.push(planets);
 };
-SolarSystem.prototype.removePlanet = function() {
-  this.planets.pop(planets);
+SolarSystem.prototype.removePlanet = function(planets) {
+  this.planets.pop();
 };
 
 /* Step 33
@@ -709,6 +709,9 @@ PrincessLeia.prototype.marries = function(spouse) {
  *
  */
 
+function Stapler(){
+
+}
 
 /* Step 35
  *
