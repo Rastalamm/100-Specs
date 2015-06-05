@@ -360,9 +360,8 @@ var installLinux = function(x){
 
 var drink = function(x){
 
-  if(!beers.hasOwnProperty(x)){
-    return false;
-  }
+  if(!beers.hasOwnProperty(x)) return false;
+
 
   if(typeof beers[x] !== 'string' ){
     var beerDescriptions = "This " + x + " is ";
@@ -392,9 +391,8 @@ var drink = function(x){
  */
 
 var browseURL = function(browser){
-  if(!browsers.hasOwnProperty(browser)){
-    return false;
-  }
+  if(!browsers.hasOwnProperty(browser)) return false;
+
   return browsers[browser];
 }
 
@@ -407,6 +405,7 @@ var browseURL = function(browser){
  * @return {String}
  *
  */
+
 
 
 /* Step 26
