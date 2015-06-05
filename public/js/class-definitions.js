@@ -406,7 +406,20 @@ var browseURL = function(browser){
  *
  */
 
+var listLivingOrgClass = function(){
+//its an array
+var openList = '<ul>';
+var closeList = '</ul>';
+var openLine = '<li>';
+var closeLine = '</li>';
+var finalString = openList;
 
+for(var i = 0; i < livingOrganismClassification.length; i++){
+  finalString += (openLine +livingOrganismClassification[i] + closeLine);
+}
+finalString += closeList;
+return finalString;
+}
 
 /* Step 26
  *
