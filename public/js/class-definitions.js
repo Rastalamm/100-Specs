@@ -449,7 +449,6 @@ var favoritePlanet = function(planet){
 
     if(randomNum !== planets.indexOf(planet)){
       var randomPlanet = planets[randomNum];
-      console.log('I\'m from ' + planet + ', but I wish I could go to ' + randomPlanet);
       return "I'm from " + planet + ', but I wish I could go to ' + randomPlanet + '.';
     }
   }
@@ -478,6 +477,18 @@ var favoritePlanet = function(planet){
  *
  */
 
+function Person(name, money, age, gender){
+  this.name = name;
+  this.money = money;
+  this.age = age;
+  this.gender = gender;
+}
+Person.prototype.spendMoney = function(money){
+    this.money -= money;
+  }
+Person.prototype.earnMoney = function(money){
+    this.money += money;
+  }
 
 /* Step 28
  *
