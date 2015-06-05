@@ -373,7 +373,6 @@ var drink = function(x){
       }
     }
     beerDescriptions += '.';
-    console.log(beerDescriptions);
     return beerDescriptions;
   }else{
     return "This " + x + " is " + beers[x] + ".";
@@ -392,6 +391,12 @@ var drink = function(x){
  *
  */
 
+var browseURL = function(browser){
+  if(!browsers.hasOwnProperty(browser)){
+    return false;
+  }
+  return browsers[browser];
+}
 
 /* Step 25
  *
