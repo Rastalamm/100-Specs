@@ -70,6 +70,8 @@ var golden_ratio = 1.61803398874;
  *
  */
 
+  var club_name = 'Fight Club';
+
 
 /* Step 9
  *
