@@ -358,6 +358,27 @@ var installLinux = function(x){
  *
  */
 
+var drink = function(x){
+
+  if(!beers.hasOwnProperty(x)){
+    return false;
+  }
+
+  if(typeof beers[x] !== 'string' ){
+    var beerDescriptions = "This " + x + " is ";
+    for(var i = 0; i < beers[x].length; i++){
+      beerDescriptions += beers[x][i];
+      if(i < beers[x].length-1){
+        beerDescriptions += ' and ';
+      }
+    }
+    beerDescriptions += '.';
+    console.log(beerDescriptions);
+    return beerDescriptions;
+  }else{
+    return "This " + x + " is " + beers[x] + ".";
+  }
+}
 
 /* Step 24
  *
