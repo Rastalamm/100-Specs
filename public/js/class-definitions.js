@@ -550,6 +550,15 @@ var canTalkAbout = function(club){
  *
  */
 
+function Pen(color){
+  this.color = color;
+}
+Pen.prototype.write = function(message) {
+
+  this.color += (': ' + message);
+
+  return this.color;
+};
 
 /* Step 31
  *
