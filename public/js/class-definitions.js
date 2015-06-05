@@ -441,6 +441,19 @@ return finalString;
  *
  */
 
+var favoritePlanet = function(planet){
+  if(planets.indexOf(planet) < 0) return planet + ' is not a planet!';
+
+  while(true){
+    var randomNum = Math.floor((Math.random() * planets.length));
+
+    if(randomNum !== planets.indexOf(planet)){
+      var randomPlanet = planets[randomNum];
+      console.log('I\'m from ' + planet + ', but I wish I could go to ' + randomPlanet);
+      return "I'm from " + planet + ', but I wish I could go to ' + randomPlanet + '.';
+    }
+  }
+}
 
 /* Step 27
  *
