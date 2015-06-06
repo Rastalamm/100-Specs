@@ -1140,6 +1140,7 @@ function Meal(foods){
 // Create 2 different species of animals
 var george = new Animal('Monkey', 'male');
 var nemo = new Animal('Fish', 'male');
+var cat = new Animal('Cat', 'female');
 
 // Create 2 different vehicles
 var civic = new Vehicle('Honda', 'Civic');
@@ -1150,8 +1151,8 @@ var square = new Shape(4);
 var hexagon= new Shape(6);
 
 // Create 2 boxes
-var catBox;
-var christmasPresent;
+var catBox = new Box(cat, true);
+var christmasPresent = new Box('open');
 
 // Create 2 doors
 var automaticDoor;
