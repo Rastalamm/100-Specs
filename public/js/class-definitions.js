@@ -1178,8 +1178,6 @@ var gingerbread = new Cookie('gingerbread');
 var breakfast = new Meal(['cereal','milk']);
 var dinner = new Meal(['fish', 'vegetables']);
 
-
-
  /* Steps 81 to 90
  *
  * Create methods
@@ -1202,6 +1200,17 @@ var dinner = new Meal(['fish', 'vegetables']);
  *
  */
 
+Animal.prototype.isWarmBlooded = function() {
+  if(this.species === 'Monkey'){
+    return true;
+  }else if(this.species === 'Bird'){
+    return true;
+  }else if(this.species === 'Fish'){
+    return false;
+  }else{
+    return 'Could not determine if warm-blooded';
+  }
+};
 
 /* Step 82
  *
