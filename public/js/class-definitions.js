@@ -1333,6 +1333,9 @@ Door.prototype.openClose = function() {
  *
  */
 
+ Shoe.prototype.findShoes = function() {
+   return 'Found ' + this.color + ' shoes of size ' + this.size;
+ };
 
  /* Step 87
  *
@@ -1343,6 +1346,12 @@ Door.prototype.openClose = function() {
  *
  */
 
+House.prototype.isATallStory = function(storiesTooTall) {
+  if(this.stories >= storiesTooTall){
+    return true;
+  }
+  return false;
+};
 
  /* Step 88
  *
