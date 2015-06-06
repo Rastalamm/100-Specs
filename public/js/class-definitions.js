@@ -1004,6 +1004,10 @@ Scientist.prototype.addDiscovery = function(arg) {
  * @param {string} gender  male or female
  */
 
+function Animal(species, gender){
+  this.species = species;
+  this.gender = gender;
+}
 
 /**
  * Step 51
@@ -1013,6 +1017,10 @@ Scientist.prototype.addDiscovery = function(arg) {
  * @param {string} model The vehicle's model
  */
 
+function Vehicle(make, model){
+  this.make = make;
+  this.model = model;
+}
 
 /**
  * Step 52
@@ -1024,6 +1032,13 @@ Scientist.prototype.addDiscovery = function(arg) {
  *
  */
 
+function Shape(sides){
+  if(sides >= 3){
+    this.sides = sides;
+  }else{
+    this.sides = null;
+  }
+}
 
 /**
  * Step 53
