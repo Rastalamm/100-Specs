@@ -1148,7 +1148,9 @@ var forte = new Vehicle('KIA', 'Forte');
 
 // Create 2 shapes with different numbers of sides
 var square = new Shape(4);
-var hexagon= new Shape(6);
+var hexagon = new Shape(6);
+var decagon = new Shape(10);
+var polygon = new Shape(2);
 
 // Create 2 boxes
 var catBox = new Box(cat, true);
@@ -1445,8 +1447,8 @@ var forwardDriving = forte.drive('');
  * and assign the values to each variable below.
  *
  */
-var decagon;
-var polygon;
+var decagon = decagon.getType();
+var polygon = polygon.getType();
 
 
 /* Step 94
