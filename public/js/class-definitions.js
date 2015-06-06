@@ -1152,7 +1152,7 @@ var hexagon= new Shape(6);
 
 // Create 2 boxes
 var catBox = new Box(cat, true);
-var christmasPresent = new Box('open');
+var christmasPresent = new Box(false);
 
 // Create 2 doors
 var automaticDoor;
