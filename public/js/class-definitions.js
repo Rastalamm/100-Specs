@@ -1101,6 +1101,13 @@ function House(stories){
  * @param {boolean} isOn Whether the light is on or off
  */
 
+function Lightbulb(isOn){
+  if(isOn === true){
+    this.isOn = true;
+  }else{
+    this.isOn = false;
+  }
+}
 
 /**
  * Step 58
