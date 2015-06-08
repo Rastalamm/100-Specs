@@ -1355,6 +1355,7 @@ House.prototype.isATallStory = function(storiesTooTall) {
   return false;
 };
 
+
  /* Step 88
  *
  * Declare a Lightbulb method called flipSwitch that accepts a
@@ -1403,10 +1404,10 @@ Cookie.prototype.swipedByCookieMonster = function(dayOfTheWeek) {
  */
 
 Meal.prototype.containsJunkFood = function() {
-  var junk = ["chips", "soda", "ice cream", "popcorn", "candy"]
+  var junkFood = ["chips", "soda", "ice cream", "popcorn", "candy"]
 
-  for(var i = 0; i < junk.length; i++){
-    if(this.foods.indexOf(junk[i]) > -1)
+  for(var i = 0; i < junkFood.length; i++){
+    if(this.foods.indexOf(junkFood[i]) > -1)
       return true;
   }
   return false;
@@ -1457,8 +1458,8 @@ var polygon = polygon.getType();
  * and assign the values to each variable below.
  *
  */
-var openAClosedBox;
-var closeAnOpenBox;
+var openAClosedBox = openAClosedBox.openBox();
+var closeAnOpenBox = closeAnOpenBox.openBox();
 
 
  /* Step 95
