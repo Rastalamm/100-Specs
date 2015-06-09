@@ -1155,6 +1155,8 @@ var openUpABox = new Box('fruit', false);
 // Create 2 doors
 var automaticDoor = new Door(true);
 var bankVault = new Door(false);
+var openMyDoor = new Door(false);
+var closeMyDoor = new Door(true);
 
 // Create 2 shoes
 var rubySlippers = new Shoe(7, 'red');
@@ -1472,8 +1474,8 @@ var closeAnOpenBox = catBox.openBox();
  * and assign the values to each variable below.
  *
  */
-var openAClosedDoor ;
-var closeAnOpenDoor;
+var openAClosedDoor = openMyDoor.openClose();
+var closeAnOpenDoor = closeMyDoor.openClose();
 
 
 /* Step 96
