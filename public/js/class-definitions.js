@@ -1179,6 +1179,7 @@ var gingerbread = new Cookie('gingerbread');
 // Create 2 different meals
 var breakfast = new Meal(['cereal','milk']);
 var dinner = new Meal(['fish', 'vegetables']);
+var badLunch = new Meal(['popcorn','milk']);
 
  /* Steps 81 to 90
  *
@@ -1439,7 +1440,6 @@ var warmBloodedAnimal = george.isWarmBlooded();
 var coldBloodedAnimal = nemo.isWarmBlooded();
 var notWarmOrColdAnimal = cat.isWarmBlooded();
 
-
 /* Step 92
  *
  * Call the drive method on two Vehicle instances
@@ -1448,7 +1448,6 @@ var notWarmOrColdAnimal = cat.isWarmBlooded();
  */
 var streetDriving = civic.drive('x');
 var forwardDriving = forte.drive('');
-
 
  /* Step 93
  *
@@ -1459,7 +1458,6 @@ var forwardDriving = forte.drive('');
 var decagon = decagon.getType();
 var polygon = polygon.getType();
 
-
 /* Step 94
  *
  * Call the openBox method on two Box instances
@@ -1468,7 +1466,6 @@ var polygon = polygon.getType();
  */
 var openAClosedBox = openUpABox.openBox();
 var closeAnOpenBox = catBox.openBox();
-
 
  /* Step 95
  *
@@ -1479,7 +1476,6 @@ var closeAnOpenBox = catBox.openBox();
 var openAClosedDoor = openMyDoor.openClose();
 var closeAnOpenDoor = closeMyDoor.openClose();
 
-
 /* Step 96
  *
  * Call the findShoes method on two Shoe instances
@@ -1488,7 +1484,6 @@ var closeAnOpenDoor = closeMyDoor.openClose();
  */
 var redShoesSize7 = rubySlippers.findShoes();
 var blackShoesSize10 = dressShoes.findShoes();
-
 
  /* Step 97
  *
@@ -1499,7 +1494,6 @@ var blackShoesSize10 = dressShoes.findShoes();
 var farTooTallAStory = sixStory.isATallStory(5);
 var shortStory = singleStory.isATallStory(2);
 
-
  /* Step 98
  *
  * Call the switch method on two Lightbulb instances
@@ -1508,7 +1502,6 @@ var shortStory = singleStory.isATallStory(2);
  */
 var kitchenLightsOn = newLight.flipSwitch('on');
 var porchLightsOff = incandescent.flipSwitch();
-
 
  /* Step 99
  *
@@ -1519,12 +1512,12 @@ var porchLightsOff = incandescent.flipSwitch();
 var cookieMonsterPwns = chocolateChip.swipedByCookieMonster('Monday');
 var cookieMonsterBlocked = chocolateChip.swipedByCookieMonster('Sunday');
 
-
  /* Step 100
  *
  * Call the containsJunkFood method on two Meal instances
  * and assign the values to each variable below.
  *
  */
-var badForYou;
-var goodForYou;
+
+var badForYou = badLunch.containsJunkFood();
+var goodForYou = breakfast.containsJunkFood();
