@@ -1165,6 +1165,7 @@ var dressShoes = new Shoe(10, 'black');
 // Create 2 houses
 var singleStory = new House(1);
 var twoStory = new House(2);
+var sixStory = new House(6);
 
 // Create 2 lightbulbs
 var incandescent = new Lightbulb(true);
@@ -1494,8 +1495,8 @@ var blackShoesSize10 = dressShoes.findShoes();
  * and assign the values to each variable below.
  *
  */
-var farTooTallAStory = twoStory.isATallStory();
-var shortStory = singleStory.isATallStory();
+var farTooTallAStory = sixStory.isATallStory(5);
+var shortStory = singleStory.isATallStory(2);
 
 
  /* Step 98
