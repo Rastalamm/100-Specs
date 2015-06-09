@@ -1170,6 +1170,7 @@ var sixStory = new House(6);
 // Create 2 lightbulbs
 var incandescent = new Lightbulb(true);
 var halogen = new Lightbulb(false);
+var newLight = new Lightbulb(false);
 
 // Create 2 cookies of different flavors
 var chocolateChip = new Cookie('chocolate');
@@ -1505,8 +1506,8 @@ var shortStory = singleStory.isATallStory(2);
  * and assign the values to each variable below.
  *
  */
-var kitchenLightsOn;
-var porchLightsOff;
+var kitchenLightsOn = newLight.flipSwitch('on');
+var porchLightsOff = incandescent.flipSwitch();
 
 
  /* Step 99
