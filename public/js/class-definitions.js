@@ -1062,11 +1062,6 @@ function Box(contents, isOpen){
 
 function Door(isOpen){
   this.isOpen = isOpen;
-  // if(isOpen === true){
-  //   this.isOpen = isOpen;
-  // }else{
-  //   this.isOpen = isOpen;
-  // }
 }
 
 
@@ -1155,6 +1150,7 @@ var polygon = new Shape(2);
 // Create 2 boxes
 var catBox = new Box(cat, true);
 var christmasPresent = new Box('n64', false);
+var openUpABox = new Box('fruit', false);
 
 // Create 2 doors
 var automaticDoor = new Door(true);
@@ -1300,13 +1296,21 @@ Shape.prototype.getType = function() {
  */
 
 Box.prototype.openBox = function() {
-  if (this.isOpen === false){
-    this.isOpen = true;
-    return true;
+
+  if(this.isOpen){
+    return false;
   }else{
     this.isOpen = true;
-    return false;
+    return true;
   }
+
+  // if (this.isOpen === false){
+  // this.isOpen = true;
+  //   return true;
+  // }else{
+  //   this.isOpen = true;
+  //   return false;
+  // }
 };
 
  /* Step 85
@@ -1458,8 +1462,8 @@ var polygon = polygon.getType();
  * and assign the values to each variable below.
  *
  */
-var openAClosedBox = openAClosedBox.openBox();
-var closeAnOpenBox = closeAnOpenBox.openBox();
+var openAClosedBox = openUpABox.openBox();
+var closeAnOpenBox = catBox.openBox();
 
 
  /* Step 95
